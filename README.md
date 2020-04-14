@@ -1,6 +1,7 @@
 Python Birds
 ===========
 
+
 Essa versão é a mais simples. Ela não contém replay nem reset, de forma que o jogo não pode retroceder.
 
 Para versão mais complexa, acesse a branch [diversao](https://github.com/pythonprobr/pythonbirds/tree/diversao)
