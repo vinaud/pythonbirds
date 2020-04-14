@@ -1,19 +1,10 @@
 Python Birds
 ===========
 
-
-Essa versão é a mais simples. Ela não contém replay nem reset, de forma que o jogo não pode retroceder.
-
-Para versão mais complexa, acesse a branch [diversao](https://github.com/pythonprobr/pythonbirds/tree/diversao)
-
-Projeto para Ensino de Programação Orientadas a Objetos em Python.
-
-A versão utilizada para desenvolvimento foi Python 3.4
-
-Um vídeo fala mais que 1000 palavras: [Python Birds](https://www.youtube.com/watch?v=b899h0lNd7U&list=PLA05yVJtRWYTm0sIa6n56UpCjCsR5ekla)
+Projeto desenvolvido na Semana do programador profissional da Python Pro BR, com o objetivo de aprendizado da linguagem Python
 
 # Contribuidores
-
+Base do projeto: [Python Birds](https://github.com/pythonprobr/pythonbirds)
 * [Giovane Liberato](https://github.com/giovaneliberato)
 * [Guido Luz](https://github.com/GuidoBR)
 * [Michel Amaral](https://github.com/michelamaral)
