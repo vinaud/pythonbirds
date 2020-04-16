@@ -24,6 +24,9 @@ class Ponto():
         return "Ponto(%s,%s,'%s')" % (self.x, self.y, self.caracter)
 
 def existe_algum_ator_ativo(atores):
+    """"
+    Método auxiliar que verifica se há algum ator ativo em uma lista de atores
+    """
     for ator in atores:
         if ator.status == ATIVO:
             return True
