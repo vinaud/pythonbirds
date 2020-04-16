@@ -40,6 +40,8 @@ Demonstração nos vídeos:
 
 [Python Birds](https://www.youtube.com/watch?v=b899h0lNd7U&list=PLA05yVJtRWYTm0sIa6n56UpCjCsR5ekla)
 
+# Classes do projeto
+
 ## script atores.py
 
 Contém todos atores do projeto.
