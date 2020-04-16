@@ -122,7 +122,7 @@ class Passaro(Ator):
         """
         y = self._y_inicial
         y += self.velocidade_escalar * delta_t * math.sin(self._angulo_de_lancamento)
-        y -= GRAVIDADE * delta_t**2 / 2
+        y -= GRAVIDADE * (delta_t**2 / 2)
         return y
 
 
@@ -152,6 +152,7 @@ class Passaro(Ator):
         if self.foi_lancado() and self.status == ATIVO:
             delta_t = tempo-self._tempo_de_lancamento
             self.x = self.calcular_posicao_horizontal(delta_t)
+            self.y = self.calcuar_posicao_vertical(delta_t)
         return self.x, self.y
 
 
