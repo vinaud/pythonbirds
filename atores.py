@@ -76,8 +76,7 @@ class Obstaculo(Ator):
 
 class Porco(Ator):
     _caracter_ativo = '@'
-
-
+    _caracter_destruido ='+'
 class DuploLancamentoExcecao(Exception):
     pass
 
@@ -117,13 +116,23 @@ class Passaro(Ator):
         """
         pass
 
+    def calcuar_posicao_vertical(self, delta_t):
+        """
+        Método para calcular a posição vertical(y) do ator.
+        """
+        y = self._y_inicial
+        y += self.velocidade_escalar * delta_t * math.sin(self._angulo_de_lancamento)
+        y -= GRAVIDADE * delta_t**2 / 2
+        return y
+
+
     def calcular_posicao_horizontal(self, delta_t):
         """
         Método para calcular a posição horizontal(x) do ator.
         """
         x = self._x_inicial
         x += self.velocidade_escalar * delta_t * math.cos(self._angulo_de_lancamento)
-
+        
         return x
 
     def calcular_posicao(self, tempo):
@@ -162,9 +171,11 @@ class Passaro(Ator):
 
 
 class PassaroAmarelo(Passaro):
-    pass
+    velocidade_escalar =30
+    _caracter_destruido ='a'
 
 
 class PassaroVermelho(Passaro):
     _caracter_ativo = 'V'
+    _caracter_destruido = 'v'
     velocidade_escalar = 20
