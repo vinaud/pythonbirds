@@ -93,7 +93,7 @@ class Passaro(Ator):
 
         :return: booleano
         """
-        return True
+        return not self._tempo_de_lancamento is None
 
     def colidir_com_chao(self):
         """
@@ -102,6 +102,11 @@ class Passaro(Ator):
 
         """
         pass
+    def calcular_posicao_horizontal(self, delta_t):
+        x = self._x_inicial
+        x += self.velocidade_escalar * delta_t * math.cos(self._angulo_de_lancamento)
+
+        return x
 
     def calcular_posicao(self, tempo):
         """
@@ -117,7 +122,10 @@ class Passaro(Ator):
         :param tempo: tempo de jogo a ser calculada a posição
         :return: posição x, y
         """
-        return 1, 1
+        if self.foi_lancado() and self.status == ATIVO:
+            delta_t = tempo-self._tempo_de_lancamento
+            self.x = self.calcular_posicao_horizontal(delta_t)
+        return self.x, self.y
 
 
     def lancar(self, angulo, tempo_de_lancamento):
@@ -129,7 +137,10 @@ class Passaro(Ator):
         :param tempo_de_lancamento:
         :return:
         """
-        pass
+        angulo_em_radianos = math.radians(angulo)
+        self._angulo_de_lancamento = angulo_em_radianos
+        self._tempo_de_lancamento = tempo_de_lancamento
+        
 
 
 class PassaroAmarelo(Passaro):
