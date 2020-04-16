@@ -40,6 +40,13 @@ class Ator():
         """
         return 1, 1
 
+    def esta_dentro_do_intervalo(self,posicao_1, posicao_2, intervalo):
+        """
+        Método auxiliar do método colidir, que verifica se dois atores estão no mesmo quadrado
+        """
+        distancia = abs(posicao_1 - posicao_2)
+        return distancia <= intervalo
+     
     def colidir(self, outro_ator, intervalo=1):
         """
         Método que executa lógica de colisão entre dois atores.
@@ -52,10 +59,17 @@ class Ator():
         :param intervalo: Intervalo a ser considerado
         :return:
         """
-        pass
+        if self.status == DESTRUIDO or outro_ator.status == DESTRUIDO:
+            return
 
+        colidiu_na_horizontal = self.esta_dentro_do_intervalo(self.x, outro_ator.x, intervalo)
+        colidiu_na_vertical = self.esta_dentro_do_intervalo(self.y, outro_ator.y, intervalo)
+        
+        if colidiu_na_horizontal and colidiu_na_vertical:
+            self.status = DESTRUIDO
+            outro_ator.status = DESTRUIDO
 
-
+    
 class Obstaculo(Ator):
     _caracter_ativo = 'O'
 
@@ -102,7 +116,11 @@ class Passaro(Ator):
 
         """
         pass
+
     def calcular_posicao_horizontal(self, delta_t):
+        """
+        Método para calcular a posição horizontal(x) do ator.
+        """
         x = self._x_inicial
         x += self.velocidade_escalar * delta_t * math.cos(self._angulo_de_lancamento)
 
