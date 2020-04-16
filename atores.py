@@ -38,7 +38,7 @@ class Ator():
         :param tempo: o tempo do jogo
         :return: posição x, y do ator
         """
-        return 1, 1
+        return self.x, self.y
 
     def esta_dentro_do_intervalo(self,posicao_1, posicao_2, intervalo):
         """
@@ -167,3 +167,4 @@ class PassaroAmarelo(Passaro):
 
 class PassaroVermelho(Passaro):
     _caracter_ativo = 'V'
+    velocidade_escalar = 20
