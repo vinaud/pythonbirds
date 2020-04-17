@@ -5,7 +5,7 @@
 
 Projeto desenvolvido na Semana do programador profissional da Python Pro BR, com o objetivo de aprendizado da linguagem Python.
 
-O Python Birds éuma versao Desktop feita em python do famoso jogo mobile, AngryBirds, feito com objetivo de estudo da linguagem em questão.
+O Python Birds é uma versao Desktop feita em python do famoso jogo mobile, AngryBirds, feito com objetivo de estudo da linguagem em questão.
 
 Para jogar, utilize as setas para cima e para baixo. Para lançar, utilize a tecla enter ou espaço.
 
