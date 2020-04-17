@@ -1,44 +1,45 @@
-Python Birds
+# Python Birds
 ===========
+[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
-Projeto desenvolvido na Semana do programador profissional da Python Pro BR, com o objetivo de aprendizado da linguagem Python
+Projeto desenvolvido na Semana do programador profissional da Python Pro BR, com o objetivo de aprendizado da linguagem Python.
 
-# Contribuidores
-Base do projeto: [Python Birds](https://github.com/pythonprobr/pythonbirds)
-* [Giovane Liberato](https://github.com/giovaneliberato)
-* [Guido Luz](https://github.com/GuidoBR)
-* [Michel Amaral](https://github.com/michelamaral)
-* [Renzo Nuccitelli](https://github.com/renzon)
+O Python Birds éuma versao Desktop feita em python do famoso jogo mobile, AngryBirds, feito com objetivo de estudo da linguagem em questão.
 
-# Abordagem
+Para jogar, utilize as setas para cima e para baixo. Para lançar, utilize a tecla enter ou espaço.
+
+# Execução do projeto
 
 Instalar [Python 3](https://www.python.org/download/).
 
 Baixar o zip do projeto (botão Download Zip) 
 
+Na pasta raiz do projeto executar:
+
+```bash
+
+$ python placa_grafica_tkinter.py
+```
+
+## Testes unitários
 Os testes se encontram dentro do pacote "testes" e servem para definir a dinâmica das classes. Para rodar todos testes, execute:
 
-    python executor_de_testes.py
-    
-Explicação detalhada sobre classes e métodos se encontram nos scripts atores.py e fase.py.
+```bash
 
-## Ordem de desenvolvimento
+$ python executor_de_testes.py
+```
 
-A ordem preferida é começar pelos atores, seguindo a ordem dos testes presentes no script atores_testes.py.
-Depois passar para a fase_teste.py, onde é implementada uma fase.
+# Telas do Projeto
 
-É possível emular um jogo que termina em vitória rodando:
+### Tela de jogada
+![cadastro](https://i.imgur.com/ck5298y.jpg)
 
-    python fase_testes.py
+### Tela de vitória
+![listagem](https://i.imgur.com/h5qKFJz.jpg)
 
-É possível jogar a fase rodando:
-
-    python placa_grafica_tkinter.py
-
-Para jogar, utilize as setas para cima e para baixo. Para lançar, utilize a tecla enter ou espaço.
-Demonstração nos vídeos:
-
-[Python Birds](https://www.youtube.com/watch?v=b899h0lNd7U&list=PLA05yVJtRWYTm0sIa6n56UpCjCsR5ekla)
+### Tela de derrota
+![caso](https://i.imgur.com/vxXKf2h.jpg)
 
 # Classes do projeto
 
@@ -189,16 +190,12 @@ Ele deve:
 1. Calcular a posição de cada pássaro, verificando se ele colidiu com algum obstáculo, porco ou chão.
 2. Retornar instâncias da classe Ponto, informando x, y e caracter respectivo a cada ator.
 
-### Divirta-se!!!!
+# Contribuidores
+Base do projeto: [Python Birds](https://github.com/pythonprobr/pythonbirds)
+* [Giovane Liberato](https://github.com/giovaneliberato)
+* [Guido Luz](https://github.com/GuidoBR)
+* [Michel Amaral](https://github.com/michelamaral)
+* [Renzo Nuccitelli](https://github.com/renzon)
 
 Powered by [Python Pro](http://adm.python.pro.br)
 
-# Observação Importante
-
-Esse projeto usa somente o interpretador padrão do Python. Para fazer jogos com mais interatividade, existe a biblioteca Pygame. Ela não foi utilizada por motivos de simplicidade, para evitar que o aluno iniciante tenha dificuldades na hora de instalar o projeto.
-
-Contudo o Estevão Fonseca fez um versão com essa biblioteca, confira o projeto:
-
-<https://github.com/estevaofon/angry-birds-python>
-
-Ele também colocou esse [vídeo no Youtube](https://www.youtube.com/watch?v=B7G5JtCFepE). 
