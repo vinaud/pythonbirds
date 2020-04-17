@@ -33,13 +33,13 @@ $ python executor_de_testes.py
 # Telas do Projeto
 
 ### Tela de jogada
-![cadastro](https://i.imgur.com/ck5298y.jpg)
+![Jogada](https://i.imgur.com/iyMa9Dv.png)
 
 ### Tela de vitória
-![listagem](https://i.imgur.com/h5qKFJz.jpg)
+![Vitoria](https://i.imgur.com/HgvnpCj.png)
 
 ### Tela de derrota
-![caso](https://i.imgur.com/vxXKf2h.jpg)
+![Derrota](https://i.imgur.com/DaGmutS.png)
 
 # Classes do projeto
 
